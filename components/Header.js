@@ -1,19 +1,19 @@
 import React from "react";
 import { signOut, useSession } from "next-auth/react";
 
-const Header = () => {
+function Header() {
   const { data: session, status } = useSession();
   return (
-    <div className="absolute inset-x-0 top-0 h-32 flex items-center justify-center">
-      <div className="text-center text-4xl ml-auto">Spotify Quiz</div>
+    <div className="absolute inset-x-0 top-0 h-1/6 p-10">
+      <div className="text-center text-4xl">Spotify Quiz</div>
       <button
-        className="ml-auto bg-[#18D860] text-white p-2 m-5 text-xl rounded-lg"
+        className=" bg-[#18D860] text-white p-2 m-10 text-xl rounded-lg absolute right-0 top-0"
         onClick={() => signOut()}
       >
         Logout
       </button>
     </div>
   );
-};
+}
 
 export default Header;
