@@ -7,7 +7,7 @@ const Header = () => {
     <div className="absolute inset-x-0 top-0 h-32 flex items-center justify-center">
       <div className="text-center text-4xl ml-auto">Spotify Quiz</div>
       <button
-        className="ml-auto bg-[#18D860] text-white p-2 m-5 rounded-lg"
+        className="ml-auto bg-[#18D860] text-white p-2 m-5 text-xl rounded-lg"
         onClick={() => signOut()}
       >
         Logout
